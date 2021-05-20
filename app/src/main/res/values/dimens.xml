@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_horizontal_standard">8dp</dimen>
+    <dimen name="margin_vertical_standard">8dp</dimen>
+    <dimen name="margin_vertical_half">4dp</dimen>
+    <dimen name="margin_horizontal_half">4dp</dimen>
+
+    <!-- Landing -->
+    <dimen name="image_frame_width">110dp</dimen>
+    <dimen name="image_frame_height">160dp</dimen>
+</resources>

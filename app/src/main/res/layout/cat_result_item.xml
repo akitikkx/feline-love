@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -8,9 +10,52 @@
             type="com.ahmedtikiwa.felinelove.domain.ImageSearchItem" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_horizontal_standard"
+        android:layout_marginTop="@dimen/margin_vertical_standard"
+        android:layout_marginEnd="@dimen/margin_horizontal_standard"
+        android:layout_marginBottom="@dimen/margin_vertical_half"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardPreventCornerOverlap="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+            <FrameLayout
+                android:id="@+id/cat_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ProgressBar
+                    android:id="@+id/image_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:showHideView="@{item.url != null}" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/search_item_image"
+                    android:layout_width="@dimen/image_frame_width"
+                    android:layout_height="@dimen/image_frame_height"
+                    android:layout_marginEnd="@dimen/margin_horizontal_half"
+                    android:contentDescription="@string/result_image_description"
+                    android:scaleType="centerCrop"
+                    app:imageUrl="@{item.url}"
+                    tools:srcCompat="@drawable/loading_list_placeholder" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 </layout>
