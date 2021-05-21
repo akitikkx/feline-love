@@ -38,7 +38,7 @@ and the following additional libraries:
   > models
     |_ NetworkImageSearchResponse.kt
     |_ NetworkImageSearchResponseItem.kt
-  |_ CatApiService.kt.kt
+  |_ CatApiService.kt
 > repository
   |_ CatApiPagingSource.kt
   |_ CatApiRepository.kt
