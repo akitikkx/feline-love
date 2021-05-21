@@ -8,4 +8,9 @@
     <string name="cat_list_loading_message">Loading…</string>
     <string name="cat_list_loading_error">There was an error fetching the results: %1$s</string>
     <string name="cat_item_transition_name">cat_detail</string>
+
+    <!-- Detail -->
+    <string name="detail_screen_title">Details</string>
+    <string name="menu_share_title">Share</string>
+    <string name="share_intent_text">Look at this cat I found! %1$s</string>
 </resources>

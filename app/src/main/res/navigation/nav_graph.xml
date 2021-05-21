@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.ahmedtikiwa.felinelove.ui.detail.DetailFragment"
-        android:label="fragment_detail"
+        android:label="@string/detail_screen_title"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="url"
