@@ -8,6 +8,10 @@
         <variable
             name="item"
             type="com.ahmedtikiwa.felinelove.domain.ImageSearchItem" />
+
+        <variable
+            name="listener"
+            type="com.ahmedtikiwa.felinelove.ui.landing.CatResultsAdapter.CatResultsAdapterListener" />
     </data>
 
 
@@ -20,6 +24,8 @@
         android:layout_marginBottom="@dimen/margin_vertical_half"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="@{(view) -> listener.onImageClick(view, item.url)}"
+        android:transitionName="@{@string/cat_item_transition_name(item.id)}"
         app:cardPreventCornerOverlap="false">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,8 +51,8 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/search_item_image"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="@dimen/image_frame_width"
+                    android:layout_height="@dimen/image_frame_height"
                     android:layout_marginEnd="@dimen/margin_horizontal_half"
                     android:contentDescription="@string/result_image_description"
                     android:scaleType="centerCrop"

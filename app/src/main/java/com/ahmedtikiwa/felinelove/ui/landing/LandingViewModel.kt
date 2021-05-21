@@ -1,4 +1,4 @@
-package com.ahmedtikiwa.felinelove.ui
+package com.ahmedtikiwa.felinelove.ui.landing
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

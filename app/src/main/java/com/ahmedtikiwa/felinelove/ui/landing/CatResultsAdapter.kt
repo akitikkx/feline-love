@@ -1,6 +1,7 @@
-package com.ahmedtikiwa.felinelove.ui
+package com.ahmedtikiwa.felinelove.ui.landing
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
@@ -11,12 +12,13 @@ import com.ahmedtikiwa.felinelove.R
 import com.ahmedtikiwa.felinelove.databinding.CatResultItemBinding
 import com.ahmedtikiwa.felinelove.domain.ImageSearchItem
 
-class CatResultsAdapter :
+class CatResultsAdapter(val listener: CatResultsAdapterListener) :
     PagingDataAdapter<ImageSearchItem, CatResultsAdapter.CatResultsViewHolder>(CAT_COMPARATOR) {
 
     override fun onBindViewHolder(holder: CatResultsViewHolder, position: Int) {
         holder.binding.also {
             it.item = getItem(position)
+            it.listener = listener
         }
     }
 
@@ -36,6 +38,10 @@ class CatResultsAdapter :
             @LayoutRes
             val LAYOUT = R.layout.cat_result_item
         }
+    }
+
+    interface CatResultsAdapterListener {
+        fun onImageClick(view: View, url: String)
     }
 
     companion object {

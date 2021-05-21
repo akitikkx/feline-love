@@ -1,4 +1,4 @@
-package com.ahmedtikiwa.felinelove.ui
+package com.ahmedtikiwa.felinelove.ui.landing
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
