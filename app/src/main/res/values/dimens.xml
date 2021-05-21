@@ -4,6 +4,8 @@
     <dimen name="margin_vertical_standard">8dp</dimen>
     <dimen name="margin_vertical_half">4dp</dimen>
     <dimen name="margin_horizontal_half">4dp</dimen>
+    <dimen name="padding_standard_double">16dp</dimen>
+    <dimen name="padding_standard">8dp</dimen>
 
     <!-- Landing -->
     <dimen name="image_frame_width">110dp</dimen>

@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/landingFragment"
         android:name="com.ahmedtikiwa.felinelove.ui.LandingFragment"
-        android:label="LandingFragment"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_landing" />
 </navigation>

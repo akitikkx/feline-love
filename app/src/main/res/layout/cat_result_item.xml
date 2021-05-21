@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_horizontal_standard"
         android:layout_marginTop="@dimen/margin_vertical_standard"
-        android:layout_marginEnd="@dimen/margin_horizontal_standard"
+        android:layout_marginEnd="@dimen/margin_horizontal_half"
         android:layout_marginBottom="@dimen/margin_vertical_half"
         android:clickable="true"
         android:focusable="true"
@@ -24,13 +24,13 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="?android:attr/selectableItemBackground">
 
             <FrameLayout
                 android:id="@+id/cat_image"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/image_frame_width"
+                android:layout_height="@dimen/image_frame_height"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -45,8 +45,8 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/search_item_image"
-                    android:layout_width="@dimen/image_frame_width"
-                    android:layout_height="@dimen/image_frame_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginEnd="@dimen/margin_horizontal_half"
                     android:contentDescription="@string/result_image_description"
                     android:scaleType="centerCrop"

@@ -90,7 +90,10 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$gson_version"
 
     // Paging
-    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
+
+    // Flexbox
+    implementation "com.google.android.flexbox:flexbox:$flexbox_version"
 
     implementation "com.jakewharton.timber:timber:$timber_version"
 

@@ -1,4 +1,4 @@
-package com.ahmedtikiwa.felinelove.adapters
+package com.ahmedtikiwa.felinelove.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
