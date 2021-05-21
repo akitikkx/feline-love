@@ -86,7 +86,7 @@ All the screens in the app separated into - landing and detail - and their respe
 The entry point for the app and the container for the `Navigation`'s `NavHostFragment`
 
 ## Screenshots
-<img src="https://github.com/akitikkx/feline-love/blob/main/screenshots/feline_love_screens.png" width="400">
+<img src="https://github.com/akitikkx/feline-love/blob/main/screenshots/feline_love_screens.png">
 
 ## License
 
